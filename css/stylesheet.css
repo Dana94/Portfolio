@@ -49,13 +49,20 @@ h1{
 	font-size: 70px;
 }
 
-#about, #skills, #projects, #contact{
-	background-color: #1C0B23; 
+footer, .row{
 	color: white;
 	font-size: 20px;
 	margin-top: -10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+#about, #projects, #contact{
+	background-color: #1C0B23; 
+}
+
+#skills{
+	background-color: #a49da7; 
 }
 
 #me{
