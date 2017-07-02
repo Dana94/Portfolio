@@ -61,7 +61,7 @@ footer, .row{
 	padding-bottom: 20px;
 }
 
-#about, #projects, #contact{
+#about{
 	background-color: #1C0B23; 
 }
 
@@ -69,6 +69,17 @@ footer, .row{
 	background-color: #43324b;
 	/*bright purple: #7c43bd;*/
 	/*grey: #a49da7;*/
+}
+
+#projects{
+	background-color: #766c7b;
+	padding-bottom: 10px;
+}
+
+#contact{
+	background-color: #e8e6e9;
+	color: #1C0B23;
+
 }
 
 #me{
@@ -137,24 +148,11 @@ footer, .row{
 	color: gray;
 }
 
-/*4) Honors, Employment */
-
-/*.award, #work .row{
-	margin-bottom: 2rem;
-}*/
-
-/*5) Courses */
-
-/*#classes ul{
-	margin-left: -40px;
-	list-style: none;
+.project{
+	height: 300px;
+	width: 300px;
+	background-color: white;
 }
-
-#classes ul li{
-	padding-top: 5px;
-}*/
-
-/*6) Skills */
 
 #icon-labels{
 	margin-top: 5px;
