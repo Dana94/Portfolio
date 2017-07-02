@@ -35,6 +35,10 @@
 	padding-right: 2rem;
 }
 
+.img-source a{
+	color: #0bb3bf;
+}
+
 @media (max-width: 768px){
 	.img-source{
 		margin-top: -10px;
@@ -61,8 +65,10 @@ footer, .row{
 	background-color: #1C0B23; 
 }
 
-#skills{
-	background-color: #a49da7; 
+#languages{
+	background-color: #43324b;
+	/*bright purple: #7c43bd;*/
+	/*grey: #a49da7;*/
 }
 
 #me{
