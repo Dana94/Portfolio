@@ -159,6 +159,9 @@ footer, .row{
 	text-align: left;
 }
 
+.title{
+	font-size: 30px;
+}
 /*For later*/
 /*
 @media (max-width: @screen-xs) {
