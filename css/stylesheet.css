@@ -74,6 +74,7 @@ footer, .row{
 #projects{
 	background-color: #766c7b;
 	padding-bottom: 10px;
+
 }
 
 #contact{
@@ -87,6 +88,14 @@ footer, .row{
 	border-radius: 50%;
 	/*float: right;*/
 
+}
+
+.apps{
+	/*transform: scale(.95);*/
+}
+
+.apps:hover{
+	box-shadow: 0 0 10px 5px black;
 }
 
 /*3) Bootstrap*/
@@ -150,8 +159,16 @@ footer, .row{
 
 .project{
 	height: 300px;
-	width: 300px;
+	/*width: 300px;*/
 	background-color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-image: url("../images/weather.png");
+	background-size: cover;
+}
+
+.name{
+	/*margin-left: 5px;*/
 }
 
 #icon-labels{
