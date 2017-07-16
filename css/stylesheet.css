@@ -152,7 +152,6 @@ footer, .row{
 
 }     
 
-
 /*For help and credit: https://codepen.io/envincebal/full/BRvBOm/*/
 
 .project-row, .icon-row {
@@ -191,5 +190,4 @@ img {
     border-radius: 100%;
     border: 5px solid;
     max-width: 230px;
-    align-self: right;
 }
