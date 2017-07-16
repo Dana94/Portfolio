@@ -157,33 +157,22 @@ footer, .row{
 	color: gray;
 }
 
-/*.project{
-	height: 300px;
+.project{
 	
-	/*background-color: white;*/
-	/*background-image: url("../images/weather.png");
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	margin-left: 20px;
-	margin-right: 20px;*/
+	margin-bottom: 10px;
 
 
-/*}*/
-
-.name{
-	/*margin-left: 5px;*/
 }
+
 
 #icon-labels{
 	margin-top: 5px;
 	text-align: left;
 }
 
-.title{
+/*.title{
 	font-size: 30px;
-}
+}*/
 /*For later*/
 /*
 @media (max-width: @screen-xs) {
@@ -245,6 +234,7 @@ h1 {
     height: 300px;
     transition: box-shadow 0.2s ease-in-out;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .img-responsive{
@@ -255,12 +245,21 @@ h1 {
 
 img {
     max-width: 100%;
+    vertical-align: middle;
+    border: 0;
 }
 
-img {
+/*img {
     vertical-align: middle;
 }
 
 img {
     border: 0;
+}*/
+
+.section-header {
+    padding: 0 0 20px 0;
+    /*font-weight: 700;*/
+    letter-spacing: 2px;
+    font-size: 30px;
 }
