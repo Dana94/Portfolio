@@ -6,11 +6,14 @@
 /*6) Skills*/
 
 
+
+
 /*1) Parallax*/
 
 .parallax-window {
     background: transparent;
     color: white;
+    width: 100%;
 }
 
 @media (max-width: 960px){
@@ -33,6 +36,16 @@ p{
 	background-color: #1C0B23;
 	text-align: right;
 	padding-right: 2rem;
+}
+
+a{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+i{
+	color: #1C0B23;
 }
 
 .img-source a{
@@ -145,12 +158,13 @@ footer, .row{
 
 
 }
-.container{
+/*.container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 
-}     
+}     */
+
 
 /*For help and credit: https://codepen.io/envincebal/full/BRvBOm/*/
 
@@ -163,7 +177,8 @@ footer, .row{
     box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.75);
 }
 .project-image {
-    height: 300px;
+    /*height: 100%;*/
+    transform: scale(.8);
     transition: box-shadow 0.2s ease-in-out;
     cursor: pointer;
     margin-top: 5px;
@@ -190,4 +205,7 @@ img {
     border-radius: 100%;
     border: 5px solid;
     max-width: 230px;
+
+    /*margin-right: 30px;*/
+
 }

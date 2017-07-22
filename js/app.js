@@ -1,4 +1,4 @@
-/*Referenced at https://css-tricks.com/snippets/jquery/smooth-scrolling/ and David Moran*/
+/*Referenced at https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
 
 $('body').scrollspy({ target: '#navbar-example' });
 
