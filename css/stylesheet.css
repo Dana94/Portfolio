@@ -40,14 +40,32 @@ p{
 	padding-right: 2rem;
 }
 
-a{
+#contact a{
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 10px;
+	
+}
+
+.modal-body{
+	color: black;
+}
+
+.description{
+	color: black;
+}
+
+
+a:hover, a:visited{
+	text-decoration: none;
 }
 
 i{
 	color: #1C0B23;
+}
+
+i:hover{
+	color: #4b1d5d;
 }
 
 .img-source a{
@@ -166,6 +184,7 @@ footer, .row{
 	flex-wrap: nowrap;
 
 }     */
+
 
 
 /*For help and credit: https://codepen.io/envincebal/full/BRvBOm/*/
