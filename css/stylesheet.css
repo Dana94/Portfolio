@@ -117,6 +117,14 @@ footer, .row{
 
 }
 
+#about-me{
+	padding: 0 10px 0 10px;
+}
+
+.project-section{
+	font-size: 20px;
+}
+
 /*3) Bootstrap*/
 
 @media (max-width: 810px) {
@@ -184,6 +192,10 @@ footer, .row{
 	flex-wrap: nowrap;
 
 }     */
+
+#completed, #in-progress{
+	background-color: #1C0B23;
+}
 
 
 
