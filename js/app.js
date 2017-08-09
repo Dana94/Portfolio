@@ -29,6 +29,7 @@ var inProgress = document.getElementById('in-progress');
 //disable
 //$(inProgress).css('')
 
+//do the projcts fade in/out? Maybe another way in jQuery to use
 
 completed.addEventListener("click", function(e) {
   console.log('hi');
