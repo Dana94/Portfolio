@@ -1,13 +1,10 @@
 /*1) Parallax*/
 /*2) General*/
-/*3) Bootstrap*/
-/*4) Honors, Employment*/
-/*5) Courses*/
-/*6) Skills*/
-
-/** {
-  border: 1px solid black;
-}*/
+/*3) About Me*/
+/*4) Bootstrap*/
+/*5) Skills*/
+/*6) Projects*/
+/*7) Contact*/
 
 
 /*1) Parallax*/
@@ -30,10 +27,6 @@
 	}
 }
 
-/*.small-window{
-	min-height: 375px;
-}*/
-
 p{
 	background-color: #1C0B23;
 	text-align: right;
@@ -47,26 +40,7 @@ p{
 	
 }
 
-.modal-body{
-	color: black;
-}
 
-.description{
-	color: black;
-}
-
-
-a:hover, a:visited{
-	text-decoration: none;
-}
-
-i{
-	color: #1C0B23;
-}
-
-i:hover{
-	color: #4b1d5d;
-}
 
 .img-source a{
 	color: #0bb3bf;
@@ -105,12 +79,6 @@ footer, .row{
 	/*grey: #a49da7;*/
 }
 
-#projects{
-	background-color: #766c7b;
-	padding-bottom: 10px;
-
-}
-
 #contact{
 	background-color: #e8e6e9;
 	color: #1C0B23;
@@ -119,10 +87,6 @@ footer, .row{
 
 #about-me{
 	padding: 0 10px 0 10px;
-}
-
-.project-section{
-	font-size: 20px;
 }
 
 /*3) Bootstrap*/
@@ -180,21 +144,55 @@ footer, .row{
 	color: gray;
 }
 
-.project{
-	
+/*6) Projects*/
+
+.project{	
 	margin-bottom: 10px;
-
-
 }
-/*.container{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 
-}     */
-
-#completed, #in-progress{
+#view-completed, #view-in-progress{
 	background-color: #1C0B23;
+	margin-top: 10px;
+}
+
+.project-section{
+	font-size: 20px;
+}
+
+/*#completed-projects, #in-progress-projects{
+	background-color: #766c7b;
+	padding-bottom: 10px;
+
+}*/
+
+#projects{
+	background-color: #766c7b;
+	padding-bottom: 10px;
+}
+
+#completed-projects{
+	display: none;
+}
+
+.modal-body{
+	color: black;
+}
+
+.description{
+	color: black;
+}
+
+
+a:hover, a:visited{
+	text-decoration: none;
+}
+
+i{
+	color: #1C0B23;
+}
+
+i:hover{
+	color: #4b1d5d;
 }
 
 

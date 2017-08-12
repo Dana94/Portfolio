@@ -23,8 +23,10 @@ $(document).ready(function(){
   });
 });
 
-var completed = document.getElementById('completed');
-var inProgress = document.getElementById('in-progress');
+//$('.in-progress-projects').css('display', 'none');
+
+var completed = document.getElementById('view-completed');
+var inProgress = document.getElementById('view-in-progress');
 
 //disable
 //$(inProgress).css('')
@@ -34,15 +36,15 @@ var inProgress = document.getElementById('in-progress');
 completed.addEventListener("click", function(e) {
   console.log('hi');
   //display the completed programs
-  //disable its button
-  //undisable the inProgress button
+  $('.completed-projects').css('display', 'inline');
+  $('.in-progress-projects').css('display', 'none');
   e.preventDefault(); 
 }, false);
 
 inProgress.addEventListener("click", function(e) {
   console.log('yo');
   //display the in-progress programs
-  //disable its button
-  //undisable the completed button
+  $('.completed-projects').css('display', 'none');
+  $('.in-progress-projects').css('display', 'inline');
   e.preventDefault(); 
 }, false);

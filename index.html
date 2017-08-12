@@ -101,17 +101,78 @@
 				</div>
 			</div>
 
-			<div class="container-fluid" id="projects">
+			<div class="container-fluid" id="projects">	
+				<!--Completed Projects Section-->
+				<span id="completed-projects">			
+					<div class="row">
+						<div class="text-center">
+							<span class="section-header">Completed Projects</span>
+						</div>
+						<div class="col-xs-12 text-center">
+							<button class="btn" id="view-in-progress">
+								<span class="project-section">View Ongoing Projects</span>
+							</button>
+						</div>
+					</div>
+					<div class="row text-center project-row">					   
+						<div class="col-md-6 project">
+							<span class="name">Weather App</span><br>
+							<img class="project-image image-responsive" src="images/weather.PNG" data-toggle="modal" data-target="#weather-modal">
+						</div>
+						<div class="col-md-6 project">
+							<span class="name">Weather App</span><br>
+							<img class="image-responsive project-image" src="images/weather.PNG">
+						</div>
+						<div class="col-md-6 project">
+							<span class="name">Weather App</span><br>
+							<img class="image-responsive project-image" src="images/weather.PNG">
+						</div>
+					</div>
+				</span>
+
+				<!--Ongoing Projects Section-->
+				<span id="in-progress-projects">
+					<div class="row">
+						<div class="text-center">
+							<span class="section-header">In Progress Projects</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="text-center">
+							<button class="btn" id="view-completed">
+								<span class="project-section">View Completed Projects</span>
+							</button>						
+						</div>
+					</div>
+					<div class="row text-center project-row">					   
+						<div class="col-md-6 project">
+							<span class="name">Weather App</span><br>
+							<img class="project-image image-responsive" src="images/weather.PNG" data-toggle="modal" data-target="#weather-modal">
+						</div>
+						<div class="col-md-6 project">
+							<span class="name">Weather App</span><br>
+							<img class="image-responsive project-image" src="images/weather.PNG">
+						</div>
+						<div class="col-md-6 project">
+							<span class="name">Weather App</span><br>
+							<img class="image-responsive project-image" src="images/weather.PNG">
+						</div>
+					</div>
+				</span>				
+			</div>	
+
+			<!-- <div class="container-fluid in-progress-projects" id="projects">
 				<div class="row">
 					<div class="text-center">
-						<span class="section-header">Projects</span>
+						<span class="section-header">In Progress Projects</span>
 					</div>
 				</div>
 				<div class="row">
-					<!-- <div class="text-center"> -->
-						<button class="btn" id="completed"><span class="project-section">Completed</span></button>
-						<button class="btn" id="in-progress"><span class="project-section">In Progress</span></button>
-					<!-- </div> -->
+					<div class="text-center">
+						<button class="btn" id="view-completed">
+							<span class="project-section">View Completed Projects</span>
+						</button>						
+					</div>
 				</div>
 				<div class="row text-center project-row">					   
 					<div class="col-md-6 project">
@@ -127,7 +188,7 @@
 						<img class="image-responsive project-image" src="images/weather.PNG">
 					</div>
 				</div>
-			</div>	
+			</div>	 -->
 
 			<!--Weather App Info-->
 			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="weather-modal">
