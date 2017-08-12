@@ -36,15 +36,15 @@ var inProgress = document.getElementById('view-in-progress');
 completed.addEventListener("click", function(e) {
   console.log('hi');
   //display the completed programs
-  $('.completed-projects').css('display', 'inline');
-  $('.in-progress-projects').css('display', 'none');
+  $('#in-progress-projects').css('display', 'none');
+  $('#completed-projects').css('display', 'inline');
   e.preventDefault(); 
 }, false);
 
 inProgress.addEventListener("click", function(e) {
   console.log('yo');
   //display the in-progress programs
-  $('.completed-projects').css('display', 'none');
-  $('.in-progress-projects').css('display', 'inline');
+  $('#completed-projects').css('display', 'none');
+  $('#in-progress-projects').css('display', 'inline');
   e.preventDefault(); 
 }, false);

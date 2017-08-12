@@ -152,18 +152,12 @@ footer, .row{
 
 #view-completed, #view-in-progress{
 	background-color: #1C0B23;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 }
 
 .project-section{
 	font-size: 20px;
 }
-
-/*#completed-projects, #in-progress-projects{
-	background-color: #766c7b;
-	padding-bottom: 10px;
-
-}*/
 
 #projects{
 	background-color: #766c7b;
@@ -180,6 +174,12 @@ footer, .row{
 
 .description{
 	color: black;
+}
+
+.projects-summary{
+	
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 
