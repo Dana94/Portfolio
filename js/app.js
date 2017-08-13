@@ -27,14 +27,28 @@ $(document).ready(function(){
 // $('#modal-place').load('completed_projects_modals.html');
 
 //
-var link = document.querySelector('link[rel=import]');
+// var link = document.querySelector('link[rel=import]');
 
-    // Clone the <template> in the import.
-    var template = link.import.querySelector('#completed-projects');
-    var clone = document.importNode(template.content, true);
+//     // Clone the <template> in the import.
+//     var template = link.import.querySelector('#completed-projects');
+//     var clone = document.importNode(template.content, true);
 
-    document.querySelector('#projects').appendChild(clone);
+//     document.querySelector('#projects').appendChild(clone);
 ////
+
+// $("#projects").load("completed_projects.html", () => {
+//   console.log('loaded!');
+// });
+
+///https://www.w3schools.com/xml/ajax_intro.asp
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("projects").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "completed_projects.html", true);
+  xhttp.send();
 
 
 
