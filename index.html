@@ -9,6 +9,12 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
+		
+		<link rel="import" type="text/html" href="./completed_projects.html">
+		<!-- <link rel="import" type="text/html" href="completed_projects_modals.html">
+
+		<link rel="import" type="text/html" href="ongoing_projects.html">
+ -->
 		<script src="https://use.fontawesome.com/81c406da02.js"></script>
 	</head>
 	<body data-spy="scroll">
@@ -101,139 +107,13 @@
 				</div>
 			</div>
 
+			<!--files conatin the different status of projects and separate files for their 
+				corresponding modals-->
 			<div class="container-fluid" id="projects">	
-				<!--Completed Projects Section-->
-				<span id="completed-projects">			
-					<div class="row">
-						<div class="text-center">
-							<span class="section-header">Completed Projects</span>
-						</div>
-						<div class="projects-summary text-center">
-							These projects are functional. There is always a chance that I will go back and improve the code with better techniques but for now, they serve their purpose. 
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 text-center">
-							<button class="btn" id="view-in-progress">
-								<span class="project-section">View Ongoing Projects</span>
-							</button>
-						</div>
-					</div>
-					<div class="row text-center project-row">					   
-						<div class="col-md-6 project">
-							<span class="name">Weather App</span><br>
-							<img class="project-image image-responsive" src="images/weather.PNG" data-toggle="modal" data-target="#weather-modal">
-						</div>
-						<div class="col-md-6 project">
-							<span class="name">Weather App</span><br>
-							<img class="image-responsive project-image" src="images/weather.PNG">
-						</div>
-						<div class="col-md-6 project">
-							<span class="name">Weather App</span><br>
-							<img class="image-responsive project-image" src="images/weather.PNG">
-						</div>
-					</div>
-				</span>
-
-				<!--Ongoing Projects Section-->
-				<span id="in-progress-projects">
-					<div class="row">
-						<div class="text-center">
-							<span class="section-header">In Progress Projects</span>
-						</div>
-						<div class="projects-summary text-center">
-							Even though these are not yet functional, I thought it would benefit to display the design I have applied to these projects.
-						</div>
-					</div>
-					<div class="row">
-						<div class="text-center">
-							<button class="btn" id="view-completed">
-								<span class="project-section">View Completed Projects</span>
-							</button>						
-						</div>
-					</div>
-					<div class="row text-center project-row">					   
-						<div class="col-md-6 project">
-							<span class="name">Image Slideshow</span><br>
-							<img class="project-image image-responsive" src="images/image-slideshow.PNG" data-toggle="modal" data-target="#">
-						</div>
-						<div class="col-md-6 project">
-							<span class="name">Clocks</span><br>
-							<img class="image-responsive project-image" src="images/clocks.PNG">
-						</div>
-						<div class="col-md-6 project">
-							<span class="name">Weather App</span><br>
-							<img class="image-responsive project-image" src="images/weather.PNG">
-						</div>
-					</div>
-				</span>				
+							
 			</div>	
 
-			<!-- <div class="container-fluid in-progress-projects" id="projects">
-				<div class="row">
-					<div class="text-center">
-						<span class="section-header">In Progress Projects</span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="text-center">
-						<button class="btn" id="view-completed">
-							<span class="project-section">View Completed Projects</span>
-						</button>						
-					</div>
-				</div>
-				<div class="row text-center project-row">					   
-					<div class="col-md-6 project">
-						<span class="name">Weather App</span><br>
-						<img class="project-image image-responsive" src="images/weather.PNG" data-toggle="modal" data-target="#weather-modal">
-					</div>
-					<div class="col-md-6 project">
-						<span class="name">Weather App</span><br>
-						<img class="image-responsive project-image" src="images/weather.PNG">
-					</div>
-					<div class="col-md-6 project">
-						<span class="name">Weather App</span><br>
-						<img class="image-responsive project-image" src="images/weather.PNG">
-					</div>
-				</div>
-			</div>	 -->
-
-			<!--Weather App Info-->
-			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="weather-modal">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="gridSystemModalLabel">Weather App</h4>
-			      </div>
-			      <div class="modal-body">
-			        <div class="row">
-			        	<div class="col-md-12">ddd
-			        		<img class="image-responsive" src="images/weather.PNG">
-			        	</div>			          
-			        </div>
-			        <div class="row">
-			        	<div class="col-md-12 description">
-			        		This was the first assignment I was given when working through <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a>. The app will show the current weather and temperature in your location as well as an icon and background expressing it. 
-			        	</div>
-			        </div>
-			        <div class="row">
-			        	<div class="col-md-4">
-			        		<a href="https://github.com/Dana94/weather-app" target="_blank">Source Code</a>
-			        	</div>
-			        </div>
-			        <div class="row">
- 						<div class="col-md-4">
- 							<a href="https://dana94.github.io/weather-app/" target="_blank">See It Live</a>
- 						</div>
-			        </div>			        
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-			  </div>
-			</div>		
+			<span id="modal-place"></span>	
 
 			<footer class="container-fluid text-center" id="contact">
 				<span class="section-header">Get in Touch</span>

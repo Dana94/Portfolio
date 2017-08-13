@@ -23,7 +23,25 @@ $(document).ready(function(){
   });
 });
 
-//$('.in-progress-projects').css('display', 'none');
+// $('#projects').load('completed_projects.html');
+// $('#modal-place').load('completed_projects_modals.html');
+
+//
+var link = document.querySelector('link[rel=import]');
+
+    // Clone the <template> in the import.
+    var template = link.import.querySelector('#completed-projects');
+    var clone = document.importNode(template.content, true);
+
+    document.querySelector('#projects').appendChild(clone);
+////
+
+
+
+
+
+
+
 
 var completed = document.getElementById('view-completed');
 var inProgress = document.getElementById('view-in-progress');
