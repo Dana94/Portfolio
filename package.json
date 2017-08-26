@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dana94/Portfolio.git"
+  },
+  "author": "Dana Otaviani\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dttaviani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dana94/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Dana94/Portfolio#readme",
+  "dependencies": {
+    "handlebars": "^4.0.10"
+  }
+}
