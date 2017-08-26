@@ -23,7 +23,6 @@ $(document).ready(function(){
   });
 });
 
-// $('#projects').load('completed_projects.html');
 // $('#modal-place').load('completed_projects_modals.html');
 
 //
@@ -41,14 +40,14 @@ $(document).ready(function(){
 // });
 
 ///https://www.w3schools.com/xml/ajax_intro.asp
-var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("projects").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "completed_projects.html", true);
-  xhttp.send();
+// var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//      document.getElementById("projects").innerHTML = this.responseText;
+//     }
+//   };
+//   xhttp.open("GET", "completed_projects.html", true);
+//   xhttp.send();
 
 
 
@@ -57,26 +56,26 @@ var xhttp = new XMLHttpRequest();
 
 
 
-var completed = document.getElementById('view-completed');
-var inProgress = document.getElementById('view-in-progress');
+// var completed = document.getElementById('view-completed');
+// var inProgress = document.getElementById('view-in-progress');
 
-//disable
-//$(inProgress).css('')
+// //disable
+// //$(inProgress).css('')
 
-//do the projcts fade in/out? Maybe another way in jQuery to use
+// //do the projcts fade in/out? Maybe another way in jQuery to use
 
-completed.addEventListener("click", function(e) {
-  console.log('hi');
-  //display the completed programs
-  $('#in-progress-projects').css('display', 'none');
-  $('#completed-projects').css('display', 'inline');
-  e.preventDefault(); 
-}, false);
+// completed.addEventListener("click", function(e) {
+//   console.log('hi');
+//   //display the completed programs
+//   $('#in-progress-projects').css('display', 'none');
+//   $('#completed-projects').css('display', 'inline');
+//   e.preventDefault(); 
+// }, false);
 
-inProgress.addEventListener("click", function(e) {
-  console.log('yo');
-  //display the in-progress programs
-  $('#completed-projects').css('display', 'none');
-  $('#in-progress-projects').css('display', 'inline');
-  e.preventDefault(); 
-}, false);
+// inProgress.addEventListener("click", function(e) {
+//   console.log('yo');
+//   //display the in-progress programs
+//   $('#completed-projects').css('display', 'none');
+//   $('#in-progress-projects').css('display', 'inline');
+//   e.preventDefault(); 
+// }, false);
