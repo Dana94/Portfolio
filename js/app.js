@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#projects").load("completed_projects.html", function(){
-    $('#here').text($('#projects').html()); // Shows html - just for testing
+    console.log('done');//$('#here').text($('#projects').html()); // Shows html - just for testing
   });
 });
 // var getImport = document.querySelector('#completed-projects-page');
