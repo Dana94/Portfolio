@@ -33,7 +33,7 @@ $(document).ready(function(){
 //     var clone = document.importNode(template.content, true);
 
 //     document.querySelector('#projects').appendChild(clone);
-////
+//
 
 // $("#projects").load("completed_projects.html", () => {
 //   console.log('loaded!');
@@ -41,18 +41,20 @@ $(document).ready(function(){
 
 ///https://www.w3schools.com/xml/ajax_intro.asp
 // var xhttp = new XMLHttpRequest();
-//   xhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//      document.getElementById("projects").innerHTML = this.responseText;
-//     }
-//   };
+//   // xhttp.onreadystatechange = function() {
+//   //   if (this.readyState == 4 && this.status == 200) {
+//   //    document.getElementById("projects").innerHTML = this.responseText;
+//   //   }
+//   // };
 //   xhttp.open("GET", "completed_projects.html", true);
 //   xhttp.send();
 
 
 
 
-
+var getImport = document.querySelector('#completed-projects-page');
+var getContent = getImport.import.querySelector('#completed-projects');
+document.body.appendChild(document.importNode(getContent, true));
 
 
 
