@@ -50,11 +50,12 @@ $(document).ready(function(){
 //   xhttp.send();
 
 
-
-
-var getImport = document.querySelector('#completed-projects-page');
-var getContent = getImport.import.querySelector('#completed-projects');
-document.body.appendChild(document.importNode(getContent, true));
+$(document).ready(function(){
+  $("#projects").load("completed_projects.html");
+});
+// var getImport = document.querySelector('#completed-projects-page');
+// var getContent = getImport.import.querySelector('#completed-projects');
+// document.body.appendChild(document.importNode(getContent, true));
 
 
 
