@@ -51,7 +51,9 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $("#projects").load("completed_projects.html");
+  $("#projects").load("completed_projects.html", function(){
+    $('#here').text($('#projects').html()); // Shows html - just for testing
+  });
 });
 // var getImport = document.querySelector('#completed-projects-page');
 // var getContent = getImport.import.querySelector('#completed-projects');
