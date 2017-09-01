@@ -38,7 +38,8 @@ var completed = document.getElementById('view-completed');
 var inProgress = document.getElementById('view-in-progress');
 
 completed.addEventListener("click", function(e) {
-  console.log('hi');
+  e.preventDefault(); 
+  //console.log('hi');
   //display the completed programs
   $("#projects").load("completed_projects.html", function(){
     console.log('done');
@@ -49,19 +50,19 @@ completed.addEventListener("click", function(e) {
   //show the other button instead
   $('#in-progress-projects').css('display', 'none');
   $('#completed-projects').css('display', 'inline');
-  e.preventDefault(); 
 }, false);
 
 inProgress.addEventListener("click", function(e) {
-  console.log('yo');
+  e.preventDefault(); 
+  //console.log('yo');
   //display the in-progress programs
    $("#projects").load("ongoing_projects.html", function(){
     console.log('done');
   });
   $('#modal-place').load('ongoing_projects_modals.html', function(){
     console.log('all good');
+  });
   //show the other button instead
   $('#completed-projects').css('display', 'none');
   $('#in-progress-projects').css('display', 'inline');
-  e.preventDefault(); 
 }, false);
