@@ -39,21 +39,17 @@ $(document).ready(function(){
 //   console.log('loaded!');
 // });
 
-///https://www.w3schools.com/xml/ajax_intro.asp
-// var xhttp = new XMLHttpRequest();
-//   // xhttp.onreadystatechange = function() {
-//   //   if (this.readyState == 4 && this.status == 200) {
-//   //    document.getElementById("projects").innerHTML = this.responseText;
-//   //   }
-//   // };
-//   xhttp.open("GET", "completed_projects.html", true);
-//   xhttp.send();
+
 
 
 $(document).ready(function(){
   $("#projects").load("completed_projects.html", function(){
-    console.log('done');//$('#here').text($('#projects').html()); // Shows html - just for testing
+    console.log('done');
   });
+  $('#modal-place').load('completed_projects_modals.html', function(){
+    console.log('all good');
+  });
+
 });
 // var getImport = document.querySelector('#completed-projects-page');
 // var getContent = getImport.import.querySelector('#completed-projects');
