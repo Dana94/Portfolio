@@ -23,24 +23,6 @@ $(document).ready(function(){
   });
 });
 
-// $('#modal-place').load('completed_projects_modals.html');
-
-//
-// var link = document.querySelector('link[rel=import]');
-
-//     // Clone the <template> in the import.
-//     var template = link.import.querySelector('#completed-projects');
-//     var clone = document.importNode(template.content, true);
-
-//     document.querySelector('#projects').appendChild(clone);
-//
-
-// $("#projects").load("completed_projects.html", () => {
-//   console.log('loaded!');
-// });
-
-
-
 
 $(document).ready(function(){
   $("#projects").load("completed_projects.html", function(){
@@ -51,32 +33,35 @@ $(document).ready(function(){
   });
 
 });
-// var getImport = document.querySelector('#completed-projects-page');
-// var getContent = getImport.import.querySelector('#completed-projects');
-// document.body.appendChild(document.importNode(getContent, true));
 
+var completed = document.getElementById('view-completed');
+var inProgress = document.getElementById('view-in-progress');
 
+completed.addEventListener("click", function(e) {
+  console.log('hi');
+  //display the completed programs
+  $("#projects").load("completed_projects.html", function(){
+    console.log('done');
+  });
+  $('#modal-place').load('completed_projects_modals.html', function(){
+    console.log('all good');
+  });
+  //show the other button instead
+  $('#in-progress-projects').css('display', 'none');
+  $('#completed-projects').css('display', 'inline');
+  e.preventDefault(); 
+}, false);
 
-// var completed = document.getElementById('view-completed');
-// var inProgress = document.getElementById('view-in-progress');
-
-// //disable
-// //$(inProgress).css('')
-
-// //do the projcts fade in/out? Maybe another way in jQuery to use
-
-// completed.addEventListener("click", function(e) {
-//   console.log('hi');
-//   //display the completed programs
-//   $('#in-progress-projects').css('display', 'none');
-//   $('#completed-projects').css('display', 'inline');
-//   e.preventDefault(); 
-// }, false);
-
-// inProgress.addEventListener("click", function(e) {
-//   console.log('yo');
-//   //display the in-progress programs
-//   $('#completed-projects').css('display', 'none');
-//   $('#in-progress-projects').css('display', 'inline');
-//   e.preventDefault(); 
-// }, false);
+inProgress.addEventListener("click", function(e) {
+  console.log('yo');
+  //display the in-progress programs
+   $("#projects").load("ongoing_projects.html", function(){
+    console.log('done');
+  });
+  $('#modal-place').load('ongoing_projects_modals.html', function(){
+    console.log('all good');
+  //show the other button instead
+  $('#completed-projects').css('display', 'none');
+  $('#in-progress-projects').css('display', 'inline');
+  e.preventDefault(); 
+}, false);
