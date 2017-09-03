@@ -23,6 +23,9 @@ $(document).ready(function(){
   });
 });
 
+var completed = '';
+var inProgress = '';
+
 
 $(document).ready(function(){
   $("#projects").load("completed_projects.html", function(){
@@ -32,29 +35,31 @@ $(document).ready(function(){
     console.log('all good');
   });
 
+  inProgress = document.getElementById('view-in-progress');
+
 });
 
-var completed = document.getElementById('view-completed');
-var inProgress = document.getElementById('view-in-progress');
+// completed.addEventListener("click", function(e) {
+//   e.preventDefault(); 
+//   //console.log('hi');
+//   //display the completed programs
+//   $("#projects").load("completed_projects.html", function(){
+//     console.log('done');
+//   });
+//   $('#modal-place').load('completed_projects_modals.html', function(){
+//     console.log('all good');
+//   });
+//   //show the other button instead
+//   $('#in-progress-projects').css('display', 'none');
+//   $('#completed-projects').css('display', 'inline');
 
-completed.addEventListener("click", function(e) {
-  e.preventDefault(); 
-  //console.log('hi');
-  //display the completed programs
-  $("#projects").load("completed_projects.html", function(){
-    console.log('done');
-  });
-  $('#modal-place').load('completed_projects_modals.html', function(){
-    console.log('all good');
-  });
-  //show the other button instead
-  $('#in-progress-projects').css('display', 'none');
-  $('#completed-projects').css('display', 'inline');
-}, false);
+//   inProgress = document.getElementById('view-in-progress');
+// }, false);
 
+//event listener for in-progress button
 inProgress.addEventListener("click", function(e) {
   e.preventDefault(); 
-  //console.log('yo');
+  
   //display the in-progress programs
    $("#projects").load("ongoing_projects.html", function(){
     console.log('done');
@@ -65,4 +70,22 @@ inProgress.addEventListener("click", function(e) {
   //show the other button instead
   $('#completed-projects').css('display', 'none');
   $('#in-progress-projects').css('display', 'inline');
+
+  //add event listener to completed projects button
+  document.getElementById('view-completed').addEventListener("click", function(e) {
+    e.preventDefault(); 
+    //console.log('hi');
+    //display the completed programs
+    $("#projects").load("completed_projects.html", function(){
+      console.log('done');
+    });
+    $('#modal-place').load('completed_projects_modals.html', function(){
+      console.log('all good');
+    });
+    //show the other button instead
+    $('#in-progress-projects').css('display', 'none');
+    $('#completed-projects').css('display', 'inline');
+
+    inProgress = document.getElementById('view-in-progress');
+  }, false);
 }, false);
