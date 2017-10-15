@@ -36,6 +36,40 @@ $(document).ready(function(){
   });
 
   inProgress = document.getElementById('view-in-progress');
+    
+    //event listener for in-progress button
+      inProgress.addEventListener("click", function(e) {
+          e.preventDefault(); 
+
+          //display the in-progress programs
+           $("#projects").load("ongoing_projects.html", function(){
+            console.log('done');
+          });
+          $('#modal-place').load('ongoing_projects_modals.html', function(){
+            console.log('all good');
+          });
+          //show the other button instead
+          $('#completed-projects').css('display', 'none');
+          $('#in-progress-projects').css('display', 'inline');
+
+      //add event listener to completed projects button
+          document.getElementById('view-completed').addEventListener("click", function(e) {
+            e.preventDefault(); 
+            //console.log('hi');
+            //display the completed programs
+            $("#projects").load("completed_projects.html", function(){
+              console.log('done');
+            });
+            $('#modal-place').load('completed_projects_modals.html', function(){
+              console.log('all good');
+            });
+            //show the other button instead
+            $('#in-progress-projects').css('display', 'none');
+            $('#completed-projects').css('display', 'inline');
+
+            inProgress = document.getElementById('view-in-progress');
+        }, false);
+    }, false);
 
 });
 
@@ -56,36 +90,36 @@ $(document).ready(function(){
 //   inProgress = document.getElementById('view-in-progress');
 // }, false);
 
-//event listener for in-progress button
-inProgress.addEventListener("click", function(e) {
-  e.preventDefault(); 
-  
-  //display the in-progress programs
-   $("#projects").load("ongoing_projects.html", function(){
-    console.log('done');
-  });
-  $('#modal-place').load('ongoing_projects_modals.html', function(){
-    console.log('all good');
-  });
-  //show the other button instead
-  $('#completed-projects').css('display', 'none');
-  $('#in-progress-projects').css('display', 'inline');
-
-  //add event listener to completed projects button
-  document.getElementById('view-completed').addEventListener("click", function(e) {
-    e.preventDefault(); 
-    //console.log('hi');
-    //display the completed programs
-    $("#projects").load("completed_projects.html", function(){
-      console.log('done');
-    });
-    $('#modal-place').load('completed_projects_modals.html', function(){
-      console.log('all good');
-    });
-    //show the other button instead
-    $('#in-progress-projects').css('display', 'none');
-    $('#completed-projects').css('display', 'inline');
-
-    inProgress = document.getElementById('view-in-progress');
-  }, false);
-}, false);
+////event listener for in-progress button
+//inProgress.addEventListener("click", function(e) {
+//  e.preventDefault(); 
+//  
+//  //display the in-progress programs
+//   $("#projects").load("ongoing_projects.html", function(){
+//    console.log('done');
+//  });
+//  $('#modal-place').load('ongoing_projects_modals.html', function(){
+//    console.log('all good');
+//  });
+//  //show the other button instead
+//  $('#completed-projects').css('display', 'none');
+//  $('#in-progress-projects').css('display', 'inline');
+//
+//  //add event listener to completed projects button
+//  document.getElementById('view-completed').addEventListener("click", function(e) {
+//    e.preventDefault(); 
+//    //console.log('hi');
+//    //display the completed programs
+//    $("#projects").load("completed_projects.html", function(){
+//      console.log('done');
+//    });
+//    $('#modal-place').load('completed_projects_modals.html', function(){
+//      console.log('all good');
+//    });
+//    //show the other button instead
+//    $('#in-progress-projects').css('display', 'none');
+//    $('#completed-projects').css('display', 'inline');
+//
+//    inProgress = document.getElementById('view-in-progress');
+//  }, false);
+//}, false);
